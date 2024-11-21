@@ -14,7 +14,7 @@ public class ConsultaMoeda {
 	
 	public ReceptorMoedas criacaoDeConexao(String tipoMoeda) throws IOException, InterruptedException {
 		HttpClient client = HttpClient.newHttpClient();
-		URI endereco = URI.create("https://v6.exchangerate-api.com/v6/" + System.getenv("API_KEY_EXCHANGE-RATE") + "/latest/" + tipoMoeda);
+		final URI endereco = URI.create("https://v6.exchangerate-api.com/v6/" + System.getenv("API_KEY_EXCHANGE-RATE") + "/latest/" + tipoMoeda);
 		
 		HttpRequest request = HttpRequest.newBuilder().uri(endereco).build();
 		

@@ -2,7 +2,7 @@ package br.com.switchcoin.ConversorDeMoedas.servicos;
 
 public class Menus {
 	
-	public void telaInicial() {
+	public static void telaInicial() {
 		System.out.println("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *");
 		System.out.println("Seja bem-vindo ao Conversor de Moedas!\nEscolha a opção desejada para fazer a sua conversão\n");
 		System.out.println("[1] - DÓLAR => REAL BRASILEIRO");
@@ -15,7 +15,11 @@ public class Menus {
 		System.out.println("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *");
 	}
 	
-	public void exibicaoConversao(String moedaInicial, String moedaConvertida, double valorConvertido) {
-		System.out.println(moedaInicial + " para " + moedaConvertida + ", equivale a: " + valorConvertido);
+	public static void valorParaSerConvertido(String moedaInicial, String moedaConvertida) {
+		System.out.println("De " + moedaInicial + " para " + moedaConvertida + " qual é o valor que você quer converter?");
+	}
+	
+	public static void exibicaoConversao(double valor, String moedaInicial, String moedaConvertida, double valorConvertido) {
+		System.out.println("\n" + valor + " " + moedaInicial + " para " + moedaConvertida + ", equivale a: " + valorConvertido);
 	}
 }
