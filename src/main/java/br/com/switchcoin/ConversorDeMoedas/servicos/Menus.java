@@ -20,6 +20,6 @@ public class Menus {
 	}
 	
 	public static void exibicaoConversao(double valor, String moedaInicial, String moedaConvertida, double valorConvertido) {
-		System.out.println("\n" + valor + " " + moedaInicial + " para " + moedaConvertida + ", equivale a: " + valorConvertido);
+		System.out.println("\n" + valor + " " + moedaInicial + " para " + moedaConvertida + ", equivale a: " + valorConvertido + " " + moedaConvertida);
 	}
 }
