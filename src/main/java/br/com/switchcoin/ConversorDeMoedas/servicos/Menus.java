@@ -4,7 +4,7 @@ public class Menus {
 	
 	public static void telaInicial() {
 		System.out.println("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *");
-		System.out.println("Seja bem-vindo ao Conversor de Moedas!\nEscolha a opção desejada para fazer a sua conversão\n");
+		System.out.println("Seja bem-vindo ao Conversor de Moedas!\nEscolha a opção desejada para fazer a sua conversão:\n");
 		System.out.println("[1] - DÓLAR => REAL BRASILEIRO");
 		System.out.println("[2] - REAL BRASILEIRO => DÓLAR");
 		System.out.println("[3] - DÓLAR => PESO ARGENTINO");
@@ -20,6 +20,6 @@ public class Menus {
 	}
 	
 	public static void exibicaoConversao(double valor, String moedaInicial, String moedaConvertida, double valorConvertido) {
-		System.out.println("\n" + valor + " " + moedaInicial + " para " + moedaConvertida + ", equivale a: " + valorConvertido + " " + moedaConvertida);
+		System.out.println("\n" + valor + " " + moedaInicial + " para " + moedaConvertida + ", equivale a: " + valorConvertido + " " + moedaConvertida + "\n");
 	}
 }
